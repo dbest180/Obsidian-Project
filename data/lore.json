@@ -5,6 +5,7 @@
       "title": "Azzaum",
       "type": "character",
       "age": "age-presence",
+      "image": "./assets/images/azzaum.jpg",
       "content": "A biological convergence in the evolutionary sequence. While ancestors learned to fear the dark, he calculated the movement of the stars."
     },
     {
@@ -12,6 +13,7 @@
       "title": "The RedFall Incident",
       "type": "event",
       "age": "age-veil",
+      "image": "./assets/images/redfall.jpg",
       "content": "The Betrayer struck down Deidriss, leading to the Fivefold Separation. The Sword remains the only known inhibitor of Ancient cellular regeneration."
     }
   ]
