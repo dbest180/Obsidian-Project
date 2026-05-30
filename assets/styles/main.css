@@ -164,3 +164,39 @@ body {
     0% { opacity: 0; transform: scale(0.95); filter: blur(4px); }
     100% { opacity: 1; transform: scale(1); filter: blur(0); }
 }
+/* Append to assets/styles/main.css */
+
+/* Thematic Shifts */
+.age-presence {
+    --bg-deep-space: #050508;
+    --neural-blue: #00f0ff;
+    --copper-raw: #b87333;
+}
+
+.age-veil {
+    --bg-deep-space: #140505;
+    --neural-blue: #ff3333;
+    --copper-raw: #8b0000;
+}
+
+.age-nudge {
+    --bg-deep-space: #0d1117;
+    --neural-blue: #45b787;
+    --copper-raw: #a8b2c1;
+}
+
+/* Dynamic Image Styling */
+.fragment-media {
+    width: 100%;
+    max-height: 250px;
+    object-fit: cover;
+    border: 1px solid rgba(255, 255, 255, 0.1);
+    margin-bottom: 20px;
+    filter: grayscale(70%) contrast(120%);
+    mix-blend-mode: screen;
+    opacity: 0.8;
+}
+
+.age-presence .fragment-media { border-color: rgba(0, 240, 255, 0.3); }
+.age-veil .fragment-media { border-color: rgba(255, 51, 51, 0.3); }
+.age-nudge .fragment-media { border-color: rgba(69, 183, 135, 0.3); }
