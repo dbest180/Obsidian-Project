@@ -37,19 +37,20 @@ function buildNavigation(nodes) {
     });
 }
 
+// Update renderFragment in scripts/main.js
 function renderFragment(node) {
     const container = document.getElementById('fragment-container');
     
-    // Shifts the CSS theme variables based on the Age
     document.body.className = node.age;
-
-    // Forces the animation to re-trigger
     container.innerHTML = '';
     
     setTimeout(() => {
+        const imageElement = node.image ? `<img src="${node.image}" alt="${node.title}" class="fragment-media">` : '';
+        
         container.innerHTML = `
             <article class="fragment focus">
                 <div class="fragment-texture"></div>
+                ${imageElement}
                 <h2 class="${node.type}">${node.title}</h2>
                 <p>${node.content}</p>
             </article>
